@@ -1,0 +1,76 @@
+/* Base styles */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #400067, #150031);
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .calculator {
+      width: 300px;
+      background: #98b2e9;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+      animation: fadeIn 1s ease;
+    }
+
+    .screen {
+      background: #1f2937;
+      color: #fff;
+      font-size: 2rem;
+      text-align: right;
+      padding: 20px;
+      border: none;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    button {
+      padding: 20px;
+      font-size: 1.2rem;
+      border: 1px solid #374151;
+      background: #1f2937;
+      color: #989191;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #7a7400;
+      transform: scale(1.05);
+    }
+
+    .span-two {
+      grid-column: span 2;
+    }
+
+    .equal {
+      background: #780680;
+      color: #979494;
+    }
+  
+@keyframes fade {
+  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(20px); }
+}
+
+    .equal:hover {
+      background: #22c55e;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+
+
+
+
